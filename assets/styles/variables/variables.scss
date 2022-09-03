@@ -1,0 +1,27 @@
+// Variables
+$nav_color: #000000;
+$description_color: #626262;
+$subtitle_color: #b4ad9e;
+$hover_color: #c7cccf;
+$signUp_color: #f0f0f0;
+
+$playfair_font: 'Playfair Display', serif;
+$inconolata_font: 'Inconsolata', monospace;
+$ubuntu_font: 'Ubuntu', sans-serif;
+
+// Mixins
+@mixin hover ($color: $hover_color) {
+  a:hover {
+    color: $color;
+  }
+}
+
+// Common
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: $playfair_font;
+  color: #626262;
+}

@@ -1,0 +1,341 @@
+@import '../../assets/styles/router/router.scss';
+@import '../../assets/styles/burger/burger.scss';
+@import '../../assets/styles/variables/variables.scss';
+
+// Header
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1064px;
+  margin: 67px auto 70px;
+
+  @media screen and (max-width: 1075px) {
+    margin: 68px 10px 71px;
+  }
+
+  @media screen and (max-width: 650px) {
+    margin: 20px 15px;
+  }
+
+  &-logo {
+    font-family: $inconolata_font;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 0.2em;
+    color: $nav_color;
+
+    @media screen and (max-width: 1075px) {
+      width: 50%;
+    }
+  }
+
+  &-menu {
+    width: 50%;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      list-style: none;
+      cursor: pointer;
+
+      @media screen and (max-width: 650px) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      li {
+        @include hover;
+
+        @media screen and (max-width: 650px) {
+          padding: 10px;
+        }
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+// Main-image
+.section-main-image {
+  max-width: 1064px;
+  margin: 0 auto;
+
+  img {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 1075px) {
+    margin: 0 5px;
+  }
+}
+
+// Promo
+.section-promo {
+  margin-top: 100px;
+
+  @media screen and (max-width: 1200px) {
+    margin: 100px 50px;
+  }
+
+  @media screen and (max-width: 650px) {
+    margin-top: 30px;
+  }
+
+  &-wrapper {
+    max-width: 890px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 1075px) {}
+
+    &-subtitle {
+      font-family: $ubuntu_font;
+      font-size: 14px;
+      font-weight: 300;
+      text-transform: uppercase;
+      margin: 27px 0 32px 0;
+      color: $subtitle_color;
+    }
+
+    &-title {
+      margin-bottom: 33px;
+      font-size: 30px;
+    }
+
+    &-description {
+      margin-bottom: 51px;
+      line-height: 24px;
+    }
+  }
+}
+
+// Content
+.section-content {
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 890px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 1075px) {}
+
+    @media screen and (max-width: 890px) {
+      margin: 50px 5px;
+    }
+
+    @media screen and (max-width: 850px) {
+      justify-content: center;
+    }
+
+    &-block {
+      max-width: 414px;
+      margin-top: 132px;
+
+      @media screen and (max-width: 850px) {
+        margin: 20px 10px;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      &-subtitle {
+        font-family: $ubuntu_font;
+        font-size: 14px;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: $subtitle_color;
+        margin: 27px 0 32px 0;
+      }
+
+      &-title {
+        margin-bottom: 33px;
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+// Sing-up
+.section-singUp {
+  background-color: $signUp_color;
+  padding: 73px;
+  margin-top: 120px;
+  text-align: center;
+
+  @media screen and (max-width: 850px) {
+    padding: 30px;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (max-width: 380px) {
+    padding: 30px;
+  }
+
+  &-wrapper {
+    max-width: 400px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 1075px) {}
+
+    &-title {
+      margin-bottom: 33px;
+      font-size: 30px;
+    }
+
+    &-input {
+      position: relative;
+
+      input {
+        background-color: transparent;
+        line-height: 24px;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid black;
+        outline: none;
+        transition: 0.5s;
+      }
+
+      button {
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        right: 3px;
+
+        i {
+          font-size: 21px;
+        }
+      }
+    }
+  }
+}
+
+// Content-loadMore
+.section-content-loadMore {
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 890px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 1075px) {}
+
+    @media screen and (max-width: 890px) {
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-bottom: 30px;
+    }
+
+    &-block {
+      margin-top: 132px;
+      max-width: 414px;
+
+      @media screen and (max-width: 850px) {
+        margin: 20px 10px;
+      }
+
+      .description {
+        line-height: 24px;
+      }
+
+      &-subtitle {
+        font-family: $ubuntu_font;
+        font-size: 14px;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: #b4ad9e;
+        margin: 27px 0 32px 0;
+      }
+
+      &-title {
+        margin-bottom: 33px;
+        font-size: 30px;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .load-more-btn {
+      background: transparent;
+      padding: 20px 34px;
+      margin: 165px auto;
+      cursor: pointer;
+      font-size: 20px;
+      border: 1px solid gray;
+
+      @media screen and (max-width: 890px) {
+        margin: 20px 10px;
+      }
+    }
+  }
+}
+
+// Footer
+.section-footer {
+  background-color: #f0f0f0;
+  &-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0 45px 0;
+    max-width: 980px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 380px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &-nav {
+      @include hover;
+      a {
+        margin-right: 17px;
+      }
+    }
+
+    &-contacts {
+      display: flex;
+      font-size: initial;
+      align-items: flex-start;
+      color: black;
+
+      .subtitle {
+        text-decoration: none;
+        font-size: initial;
+        color: black;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      font-size: initial;
+      color: black;
+    }
+  }
+}
+
+// Icons
+.social-icons {
+  display: flex;
+  text-align: center;
+}
+
+.social-icons a {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.fa-brands {
+  padding-left: 20px;
+  font-size: 20px;
+}
