@@ -12,7 +12,6 @@
 
   @media screen and (max-width: 1075px) {
     margin: 68px 10px 71px;
-    width: 100%;
   }
 
   @media screen and (max-width: 650px) {
@@ -330,6 +329,10 @@
     padding: 40px 0 45px 0;
     max-width: 980px;
     margin: 0 auto;
+
+    @media screen and (max-width: 1000px) {
+      padding: 40px 20px 45px;
+    }
 
     @media screen and (max-width: 400px) {
       flex-direction: column;

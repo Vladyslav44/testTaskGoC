@@ -85,10 +85,12 @@ html {
 
 .burger {
   display: none;
+  z-index: 2;
 }
 @media screen and (max-width: 650px) {
   .burger {
     display: block;
+    z-index: 2;
   }
 }
 
@@ -391,6 +393,11 @@ html {
   padding: 40px 0 45px 0;
   max-width: 980px;
   margin: 0 auto;
+}
+@media screen and (max-width: 1000px) {
+  .section-footer-content {
+    padding: 40px 20px 45px;
+  }
 }
 @media screen and (max-width: 400px) {
   .section-footer-content {

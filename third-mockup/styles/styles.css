@@ -85,10 +85,12 @@ html {
 
 .burger {
   display: none;
+  z-index: 2;
 }
 @media screen and (max-width: 650px) {
   .burger {
     display: block;
+    z-index: 2;
   }
 }
 
@@ -140,7 +142,6 @@ html {
 @media screen and (max-width: 1075px) {
   .section-header {
     margin: 68px 10px 71px;
-    width: 100%;
   }
 }
 @media screen and (max-width: 650px) {
@@ -217,6 +218,7 @@ html {
 @media screen and (max-width: 950px) {
   .section-content-wrapper {
     margin: 0 15px;
+    padding: 0;
     display: block;
   }
 }
@@ -225,6 +227,8 @@ html {
 }
 @media screen and (max-width: 950px) {
   .section-content-wrapper-content {
+    display: flex;
+    flex-direction: column;
     margin: 0 15px;
   }
 }
@@ -254,19 +258,26 @@ html {
   justify-content: space-between;
   flex-direction: row-reverse;
 }
-.section-content-wrapper-content .content-social .content-social-nav {
+.section-content-wrapper-content .content-social-nav {
   padding-left: 520px;
   padding-bottom: 10px;
   text-transform: uppercase;
   font-family: "Ubuntu", sans-serif;
   color: #b4ad9e;
 }
-.section-content-wrapper-content .content-social .content-social-nav i {
+@media screen and (max-width: 950px) {
+  .section-content-wrapper-content .content-social-nav {
+    display: flex;
+    padding: 0;
+    align-items: baseline;
+  }
+}
+.section-content-wrapper-content .content-social-nav i {
   font-size: 18px;
   padding: 7px;
   opacity: 0.5;
 }
-.section-content-wrapper-content .content-social .content-social-nav .fa-facebook-f {
+.section-content-wrapper-content .content-social-nav .fa-facebook-f {
   padding-left: 35px;
 }
 .section-content-wrapper img {
@@ -339,6 +350,11 @@ html {
 }
 .section-yourLike-wrapper-photos .block {
   padding-right: 45px;
+}
+@media screen and (max-width: 800px) {
+  .section-yourLike-wrapper-photos .block {
+    padding: 10px;
+  }
 }
 
 .section-comments-wrapper {
@@ -473,6 +489,11 @@ html {
   max-width: 980px;
   margin: 0 auto;
 }
+@media screen and (max-width: 1000px) {
+  .section-footer-content {
+    padding: 40px 20px 45px;
+  }
+}
 @media screen and (max-width: 400px) {
   .section-footer-content {
     flex-direction: column;
@@ -526,7 +547,7 @@ html {
 }
 @media screen and (max-width: 690px) {
   .content-side-block {
-    margin: 30px 3px 50px 3px;
+    margin-bottom: 50px;
   }
 }
 .content-side-block p {
