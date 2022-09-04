@@ -7,6 +7,10 @@
   color: #626262;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .menu-btn {
   width: 30px;
   height: 30px;
@@ -50,10 +54,12 @@
 
 .burger {
   display: none;
+  z-index: 2;
 }
 @media screen and (max-width: 650px) {
   .burger {
     display: block;
+    z-index: 2;
   }
 }
 
