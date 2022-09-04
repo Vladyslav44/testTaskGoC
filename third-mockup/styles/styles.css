@@ -7,6 +7,10 @@
   color: #626262;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .pages-router {
   height: 35px;
   display: flex;
@@ -32,6 +36,10 @@
   font-weight: 400;
   font-family: "Playfair Display", serif;
   color: #626262;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .menu-btn {
@@ -116,6 +124,10 @@
   font-weight: 400;
   font-family: "Playfair Display", serif;
   color: #626262;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .section-header {

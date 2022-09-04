@@ -27,3 +27,7 @@ $router_z_index: 3;
   font-family: $playfair_font;
   color: #626262;
 }
+
+html {
+  scroll-behavior: smooth;
+}
