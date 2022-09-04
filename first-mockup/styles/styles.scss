@@ -283,6 +283,7 @@
 // Footer
 .section-footer {
   background-color: #f0f0f0;
+
   &-content {
     display: flex;
     align-items: center;
@@ -291,13 +292,15 @@
     max-width: 980px;
     margin: 0 auto;
 
-    @media screen and (max-width: 380px) {
+    @media screen and (max-width: 400px) {
       flex-direction: column;
       align-items: center;
+      padding: 40px 8px 45px;
     }
 
     &-nav {
       @include hover;
+
       a {
         margin-right: 17px;
       }

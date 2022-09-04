@@ -16,8 +16,7 @@
   border-bottom: 1px solid #cccccc;
   position: sticky;
   top: 0;
-  width: 100vw;
-  z-index: 9999;
+  z-index: 3;
 }
 .pages-router a:hover {
   color: #c7cccf;
@@ -123,12 +122,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 67px auto 70px;
   max-width: 1064px;
+  margin: 67px auto 70px;
 }
 @media screen and (max-width: 1075px) {
   .section-header {
     margin: 68px 10px 71px;
+    width: 100%;
   }
 }
 @media screen and (max-width: 650px) {
@@ -138,10 +138,10 @@
 }
 .section-header-logo {
   font-family: "Inconsolata", monospace;
-  cursor: pointer;
   font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
+  cursor: pointer;
   letter-spacing: 0.2em;
   color: #000000;
 }
@@ -202,13 +202,19 @@
   display: flex;
   justify-content: space-between;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
   .section-content-wrapper {
-    margin: 0 5px;
+    margin: 0 15px;
+    display: block;
   }
 }
 .section-content-wrapper-content {
   display: grid;
+}
+@media screen and (max-width: 950px) {
+  .section-content-wrapper-content {
+    margin: 0 15px;
+  }
 }
 .section-content-wrapper-content .content-subtitle {
   font-family: "Ubuntu", sans-serif;
@@ -347,6 +353,7 @@
 .section-comments-wrapper-commentList .comment-avatar {
   position: relative;
   padding: 5px 25px 0 0;
+  width: 70px;
 }
 .section-comments-wrapper-commentList .comment-avatar-image {
   width: 70px;
@@ -392,9 +399,16 @@
   background: #417db7;
 }
 .section-comments-wrapper-input .input-avatar .avatar {
+  width: 70px;
   font-family: "Ubuntu", sans-serif;
   color: white;
   font-size: 37px;
+  text-align: center;
+}
+@media screen and (max-width: 900px) {
+  .section-comments-wrapper-input .input-avatar .avatar {
+    width: 70px;
+  }
 }
 .section-comments-wrapper-input input {
   width: 100%;
@@ -440,40 +454,41 @@
   background-color: #f0f0f0;
 }
 .section-footer-content {
-  padding: 40px 0 45px 0;
-  max-width: 980px;
-  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 40px 0 45px 0;
+  max-width: 980px;
+  margin: 0 auto;
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 400px) {
   .section-footer-content {
     flex-direction: column;
     align-items: center;
+    padding: 40px 8px 45px;
   }
 }
 .section-footer-content-nav a:hover {
   color: #c7cccf;
 }
 .section-footer-content-nav a {
-  margin-left: 17px;
+  margin-right: 17px;
 }
 .section-footer-content-contacts {
   display: flex;
+  font-size: initial;
   align-items: flex-start;
   color: black;
-  font-size: initial;
 }
 .section-footer-content-contacts .subtitle {
+  text-decoration: none;
   font-size: initial;
   color: black;
-  text-decoration: none;
 }
 .section-footer-content a {
+  text-decoration: none;
   font-size: initial;
   color: black;
-  text-decoration: none;
 }
 
 .social-icons {
@@ -497,12 +512,13 @@
   width: 250px;
   margin: 30px 0 50px 50px;
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 690px) {
   .content-side-block {
-    margin-top: 30px 3px 50px 3px;
+    margin: 30px 3px 50px 3px;
   }
 }
 .content-side-block p {
+  line-height: 24px;
   margin: 0;
 }
 .content-side-block img {
@@ -512,18 +528,38 @@
   font-size: 27px;
   margin: 15px 0;
 }
-.content-side-block .content-side-block-social a {
-  color: rgb(193, 190, 172);
+.content-side-block .content-side-block-social {
+  padding: 20px 0 60px;
+}
+.content-side-block .content-side-block-social a i {
+  padding: 0;
+  padding-right: 10px;
+  color: #b4ad9e;
+}
+.content-side-block .topPost-title {
+  text-transform: uppercase;
+  font-family: "Ubuntu", sans-serif;
+  color: #b4ad9e;
+  padding-bottom: 30px;
 }
 .content-side-block .topPost-list {
   padding-left: 17px;
 }
 .content-side-block li {
   margin-bottom: 10px;
+  color: black;
+  font-size: 16px;
+}
+.content-side-block li::marker {
+  color: #b4ad9e;
+  font-size: 13px;
 }
 .content-side-block .topPosts-comments {
   font-size: 11px;
   padding-top: 5px;
+  text-transform: uppercase;
+  font-family: "Ubuntu", sans-serif;
+  color: #b4ad9e;
 }
 .content-side-block .banner {
   width: 250px;
@@ -535,6 +571,9 @@
   line-height: 5.5;
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
+}
+.content-side-block-topPosts {
+  padding-bottom: 30px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -9,6 +9,8 @@ $playfair_font: 'Playfair Display', serif;
 $inconolata_font: 'Inconsolata', monospace;
 $ubuntu_font: 'Ubuntu', sans-serif;
 
+$router_z_index: 3;
+
 // Mixins
 @mixin hover ($color: $hover_color) {
   a:hover {

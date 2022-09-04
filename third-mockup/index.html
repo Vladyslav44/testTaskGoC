@@ -14,15 +14,8 @@
     <title>TestTaskGoCows third mockup</title>
   </head>
   <body>
-    <div class="app">
-      <div class="pages-router">
-        <a href="../first-mockup/index.html">First Mockup</a>
-        <a href="../second-mockup/index.html">Second Mockup</a>
-        <a href="index.html">Third Mockup</a>
-        <a href="#top">Up</a>
-      </div>
-
-      <header id="top" class="section-header">
+    <div id="app" class="app">
+      <header class="section-header">
         <div class="section-header-logo">
           minimø
         </div>
@@ -38,16 +31,16 @@
         <nav class="section-header-menu">
           <ul>
             <li>
-              <a href="#main-image">LIFESTYLE</a>
+              <a href="#promo">LIFESTYLE</a>
             </li>
             <li>
               <a href="#content">PHOTODIARY</a>
             </li>
             <li>
-              <a href="#yourLike">MUSIC</a>
+              <a href="#singUp">MUSIC</a>
             </li>
             <li>
-              <a href="#comments">TRAVEL</a>
+              <a href="#loadMore">TRAVEL</a>
             </li>
           </ul>
         </nav>
@@ -57,6 +50,7 @@
         <section id="main-image" class="section-main-image">
           <div class="swiper">
             <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="../assets/images/slide.png" alt="slide"/></div>
               <div class="swiper-slide"><img src="../assets/images/slide.png" alt="slide"/></div>
               <div class="swiper-slide"><img src="../assets/images/slide.png" alt="slide"/></div>
               <div class="swiper-slide"><img src="../assets/images/slide.png" alt="slide"/></div>
@@ -129,17 +123,16 @@
 
               <div>
                 <div class="content-side-block">
-                  <div class="content-side-block-image"><img src="images/about-image.png" alt="about-image" /></div>
+                  <div class="content-side-block-image"><img src="../assets/images/section-content-img3.png" alt="about-image" /></div>
                   <h1 class="content-side-block-title">About me</h1>
                   <p class="content-side-block-description">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, nam? Provident,
-                    magnam dolorum mollitia quam ducimus saepe, repellat illo facilis sunt voluptatem,
-                    minima praesentium vitae? Consequatur voluptates quidem accusantium officia?
+                    magnam dolorum mollitia quam ducimus saepe, repellat illo facilis
                   </p>
                   <div class="content-side-block-social">
-                    <a href="https://www.facebook.com " class="icon-facebook"></a>
-                    <a href="https://www.instagram.com" class="icon-instagram"></a>
-                    <a href="https://ru.pinterest.com/" class="icon-pinterest"></a>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.pinterest.com/Square/" target="_blank"><i class="fa-brands fa-square-pinterest"></i></a>
                   </div>
                   <div class="content-side-block-topPosts">
                     <h1 class="topPost-title">Top posts</h1>
@@ -160,11 +153,11 @@
                       </ul>
                     </div>
                   </div>
-                  <div class="banner">250x250</div>
+                  <div class="banner">
+                    250x250
+                  </div>
                 </div>
               </div>
-
-            <!-- --------------- -->
           </div>
         </section>
 
@@ -251,11 +244,11 @@
             <div class="subtitle">
               Follow
             </div>
-            <ul class="social-icons">
+            <div class="social-icons">
               <a href="https://uk-ua.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
               <a href="https://twitter.com/?lang=uk" target="_blank"><i class="fa-brands fa-twitter"></i></a>
               <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            </ul>
+            </div>
           </div>
         </div>
       </footer>
@@ -263,6 +256,8 @@
   </body>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="../assets/scripts/libraries/jquery.min.js"></script>
+  <script src="../assets/scripts/router.js"></script>
   <script src="../assets/scripts/slider.js"></script>
   <script src="../assets/scripts/burger.js"></script>
 </html>
