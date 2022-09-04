@@ -34,7 +34,7 @@ testTaskGoC/
 |   |    |-- slide.png
 |   |    |-- section-content-loadMore-img1.png
 |   |    |-- section-content-loadMore-img2.png
-|	  |    |-- yourLike-wrapper-image.png
+|   |    |-- yourLike-wrapper-image.png
 |   |    |-- yourLike-wrapper-image2.png
 |   |   
 |   |-- scripts/    
