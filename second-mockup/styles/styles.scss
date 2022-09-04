@@ -273,6 +273,12 @@
           font-family: 'Ubuntu', sans-serif;
           color: white;
           font-size: 37px;
+          width: 70px;
+          text-align: center;
+
+          @media screen and (max-width: 900px) {
+            width: 70px;
+          }
         }
       }
       input {

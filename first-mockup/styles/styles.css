@@ -85,12 +85,13 @@ html {
 
 .burger {
   display: none;
-  z-index: 2;
 }
 @media screen and (max-width: 650px) {
   .burger {
     display: block;
-    z-index: 2;
+    position: fixed;
+    right: 10px;
+    z-index: 3;
   }
 }
 

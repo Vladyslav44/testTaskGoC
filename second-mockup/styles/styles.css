@@ -85,12 +85,13 @@ html {
 
 .burger {
   display: none;
-  z-index: 2;
 }
 @media screen and (max-width: 650px) {
   .burger {
     display: block;
-    z-index: 2;
+    position: fixed;
+    right: 10px;
+    z-index: 3;
   }
 }
 
@@ -397,6 +398,13 @@ html {
   font-family: "Ubuntu", sans-serif;
   color: white;
   font-size: 37px;
+  width: 70px;
+  text-align: center;
+}
+@media screen and (max-width: 900px) {
+  .section-comments-wrapper-input .input-avatar .avatar {
+    width: 70px;
+  }
 }
 .section-comments-wrapper-input input {
   width: 100%;
