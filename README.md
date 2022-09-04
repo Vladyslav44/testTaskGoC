@@ -3,7 +3,7 @@ Tech task, three adaptive pages.
 
 This task is a mini program written with the help of JavaScript / jQuery / CSS / SASS / HTML.
 
-** Working with the program:**
+__Working with the program:__
 
 1. To run the program, you need to open the main.html file - located in the root folder.
 
@@ -80,7 +80,7 @@ testTaskGoC/
 |        |-- styles.css
 |        |-- styles.css.map
 |
-|-- main.html
+|-- index.html
 |-- ReadMe.md
 
 ```
