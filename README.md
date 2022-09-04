@@ -5,7 +5,7 @@ This task is a mini program written with the help of JavaScript / jQuery / CSS /
 
 __Working with the program:__
 
-1. To run the program, you need to open the main.html file - located in the root folder.
+1. To run the program, you need to open the index.html file - located in the root folder.
 
 2. You need to choose one of mockups and click on one of them. There you can also see link 
 of task and my cantacts. 
@@ -105,7 +105,7 @@ __Functionality:__
  5. The ../(first, second, third)-mockup`s folders that contains mockups pages with the styles to them.
  
  6. The main project folder contains:
-    * main.html - markup in html of our page.
+    * index.html - markup in html of our page.
     * ReadMe.md - it is instruction.
     
     
@@ -114,6 +114,7 @@ __Author:__
 
     * e-mail: svladislav855@gmail.com
     * telephone: 380987009387
+    * Linkedin: https://www.linkedin.com/in/vladyslav-saienko-074b50242/
  
  
         
