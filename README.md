@@ -92,21 +92,21 @@ __Functionality:__
  2. The ../images folder contains images.
  
  3. The ../scripts folder contains files that provide program logic, such as:
-    * ../jquery.min.js shortens the code of logic
-    * ../burger.js  function that causes burger menu.
-    * ../router.js  function that causes router
-    * ../slider.js  slider logic
+    * ../jquery.min.js - shortens the code of logic
+    * ../burger.js -  function that causes burger menu.
+    * ../router.js - function that causes router
+    * ../slider.js -  slider logic
  
  4. The ../styles folder contains style files for our application, such as:
-    * ../burger  folder that contains files that give styles for burger menu.
-    * ../router  contains files that give styles for router.
-    * ../variables  contains style files that can be changed later on.
+    * ../burger - folder that contains files that give styles for burger menu.
+    * ../router - contains files that give styles for router.
+    * ../variables - contains style files that can be changed later on.
  
  5. The ../(first, second, third)-mockup`s folders that contains mockups pages with the styles to them.
  
  6. The main project folder contains:
-    * main.html  markup in html of our page.
-    * ReadMe.md is the instruction
+    * main.html - markup in html of our page.
+    * ReadMe.md - it is instruction.
     
     
 __Author:__
